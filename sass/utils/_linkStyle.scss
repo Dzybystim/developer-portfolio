@@ -1,0 +1,24 @@
+.link_text {
+  font-family: $mainFont;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 2.29px;
+
+  text-transform: uppercase;
+  position: relative;
+
+  color: $text-color;
+}
+
+.link_text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 36px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: $brand-color;
+}
