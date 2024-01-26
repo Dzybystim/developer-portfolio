@@ -212,4 +212,12 @@
   letter-spacing: -1.14px;
   color: #ffffff;
   margin: 0;
+}
+
+.job_imgBox {
+  width: 343px;
+}
+
+.job_img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
