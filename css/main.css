@@ -3,11 +3,18 @@
   src: url("../../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format(truetype);
   font-weight: 100 900;
 }
-.hero_text {
+.job_header, .hero_text {
   font-family: "SpaceGrotesk";
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+}
+
+.job_languageElem {
+  font-family: "SpaceGrotesk";
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
 }
 
 .link_text {
@@ -214,10 +221,48 @@
   margin: 0;
 }
 
+.job {
+  margin-bottom: 40px;
+}
+
+.job:last-child {
+  margin-bottom: 80px;
+}
+
 .job_imgBox {
   width: 343px;
+  margin-bottom: 20px;
 }
 
 .job_img {
+  display: block;
   width: 100%;
+  height: 100%;
+}
+
+.job_header {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.job_language {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.job_languageElem {
+  text-transform: uppercase;
+  color: #d9d9d9;
+}
+
+.job_link {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 12px;
 }/*# sourceMappingURL=main.css.map */

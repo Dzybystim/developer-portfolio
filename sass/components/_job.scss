@@ -1,7 +1,51 @@
+.job {
+  margin-bottom: 40px;
+}
+
+.job:last-child {
+  margin-bottom: 80px;
+}
+
 .job_imgBox {
   width: 343px;
+  margin-bottom: 20px;
 }
 
 .job_img {
+  display: block;
   width: 100%;
+  height: 100%;
+}
+
+.job_header {
+  @extend %headingM;
+
+  text-transform: uppercase;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.job_language {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.job_languageElem {
+  @extend %bodyL;
+
+  text-transform: uppercase;
+  color: $second-text-color;
+}
+
+.job_link {
+  display: flex;
+  gap: 30px;
+
+  padding-bottom: 12px;
 }
