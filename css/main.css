@@ -265,4 +265,41 @@
   display: flex;
   gap: 30px;
   padding-bottom: 12px;
+}
+
+.contact {
+  background-color: #242424;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 60px;
+}
+
+.contact_header {
+  font-family: "SpaceGrotesk";
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -1.14px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contact_text {
+  font-family: "SpaceGrotesk";
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #d9d9d9;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.contact_input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  background-color: inherit;
 }/*# sourceMappingURL=main.css.map */

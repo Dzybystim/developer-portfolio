@@ -1,0 +1,39 @@
+.contact {
+  background-color: $second-fon-color;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 60px;
+}
+
+.contact_header {
+  font-family: $mainFont;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -1.14px;
+  color: $text-color;
+
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contact_text {
+  font-family: $mainFont;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: $second-text-color;
+
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.contact_input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $text-color;
+
+  background-color: inherit;
+}
