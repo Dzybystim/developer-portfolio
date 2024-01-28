@@ -1,4 +1,4 @@
-.link_text {
+.button {
   font-family: $mainFont;
   font-size: 16px;
   line-height: 26px;
@@ -10,9 +10,17 @@
   cursor: pointer;
 
   color: $text-color;
+
+  display: block;
+  margin-left: auto;
+
+  background-color: inherit;
+  padding: 0;
+  padding-bottom: 12px;
+  border: 0;
 }
 
-.link_text::after {
+.button::after {
   content: "";
   position: absolute;
   display: block;
