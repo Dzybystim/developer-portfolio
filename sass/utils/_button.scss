@@ -20,6 +20,10 @@
   border: 0;
 }
 
+.button:hover {
+  color: $brand-color;
+}
+
 .button::after {
   content: "";
   position: absolute;

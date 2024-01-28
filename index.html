@@ -21,8 +21,8 @@
     <header>
       <div class="hero hero--indent">
         <div class="hero_foto-box">
-          <p class="hero_text">adamkeyes</p>
-          <ul class="hero_list">
+          <p class="hero_text hero_text--indent">adamkeyes</p>
+          <ul class="hero_list hero_list--indent">
             <li>
               <svg class="hero_icon">
                 <use href="./assets/images/sprite-icon.svg#icon-github"></use>
@@ -220,7 +220,7 @@
     </main>
     <footer class="contact">
       <section>
-        <form>
+        <form class="contact_form--indent">
           <h2 class="contact_header">Contact</h2>
           <p class="contact_text">
             I would love to hear about your project and how I could help. Please
@@ -231,24 +231,66 @@
             name="name"
             placeholder="Name"
             class="contact_input contact_input--bottom"
+            required
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}"
+            title="Нужно ввести больше 2 символов"
           />
+          <label name="name" class="contact_textInvalid"
+            >Sorry, invalid format here</label
+          >
           <input
             type="email"
             name="email"
             placeholder="Email"
             class="contact_input contact_input--bottom"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            title="Нужно ввести больше 2 символов"
           />
+          <label name="email" class="contact_textInvalid"
+            >Sorry, invalid format here</label
+          >
           <textarea
             name="message"
             placeholder="Message"
             rows="5"
             class="contact_input"
+            required
           ></textarea>
-          <button type="button" class="button">Send message</button>
+          <label name="message" class="contact_textInvalid"
+            >Sorry, invalid format here</label
+          >
+          <button type="submit" class="button">Send message</button>
         </form>
+        <div class="experience_line"></div>
       </section>
-      <section></section>
+      <section class="contact_socialBox contact_socialBox--indent">
+        <p class="hero_text hero_text--center">adamkeyes</p>
+        <ul class="hero_list hero_list--center">
+          <li>
+            <svg class="hero_icon">
+              <use href="./assets/images/sprite-icon.svg#icon-github"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="hero_icon">
+              <use
+                href="./assets/images/sprite-icon.svg#icon-frontend-mentor"
+              ></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="hero_icon">
+              <use href="./assets/images/sprite-icon.svg#icon-linkedin"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="hero_icon">
+              <use href="./assets/images/sprite-icon.svg#icon-twitter"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
     </footer>
-    adamkeyes
   </body>
 </html>

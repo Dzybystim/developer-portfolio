@@ -12,6 +12,10 @@
   color: $text-color;
 }
 
+.link_text:hover {
+  color: $brand-color;
+}
+
 .link_text::after {
   content: "";
   position: absolute;
