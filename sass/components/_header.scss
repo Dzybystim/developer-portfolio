@@ -1,11 +1,10 @@
 .fon-color {
   background-color: $fon-color;
+  min-width: 375px;
+  max-width: 375px;
 }
 
 .hero {
-  padding-left: 16px;
-  padding-right: 16px;
-
   background-image: url("../../assets/images/pattern-rings.svg"),
     url("../../assets/images/pattern-circle.svg");
   background-repeat: no-repeat, no-repeat;
@@ -14,6 +13,8 @@
 }
 
 .hero--indent {
+  padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 92px;
 }
 
@@ -115,4 +116,34 @@
 
 .hero_contact-box {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .fon-color {
+    max-width: 768px;
+  }
+
+  .hero {
+    background-image: url("../../assets/images/pattern-rings.svg"),
+      url("../../assets/images/pattern-circle.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -265px 86px, 702px 471px;
+    background-size: 530px, 129px;
+  }
+
+  .hero--indent {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-bottom: 72px;
+  }
+
+  .hero_foto-box {
+    width: 322px;
+    position: relative;
+    margin-left: auto;
+    margin-right: -30px;
+
+    margin-bottom: 40px;
+  }
 }
