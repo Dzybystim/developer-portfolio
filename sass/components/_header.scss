@@ -10,6 +10,7 @@
   background-repeat: no-repeat, no-repeat;
   background-position: -342px 124px, 311px 254px;
   background-size: 530px, 129px;
+  position: relative;
 }
 
 .hero--indent {
@@ -20,11 +21,14 @@
 
 .hero_foto-box {
   width: 174px;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
 
   margin-bottom: 40px;
+}
+
+.hero_circle {
+  display: none;
 }
 
 .hero_text {
@@ -32,12 +36,15 @@
   color: $text-color;
   letter-spacing: -0.33px;
   margin: 0;
+  text-align: center;
+
+  margin-bottom: 20px;
 }
 
-.hero_text--indent {
+.hero_contactBox--indent {
   position: absolute;
+  left: 111px;
   top: 20px;
-  left: 22px;
 }
 
 .hero_text--center {
@@ -53,12 +60,6 @@
   list-style-type: none;
 }
 
-.hero_list--indent {
-  position: absolute;
-  top: 72px;
-  left: 10px;
-}
-
 .hero_list--center {
   justify-content: center;
 }
@@ -66,6 +67,12 @@
 .hero_icon {
   width: 20px;
   height: 20px;
+  fill: $text-color;
+  cursor: pointer;
+}
+
+.hero_icon:hover {
+  fill: $brand-color;
 }
 
 .hero_image {
@@ -124,26 +131,88 @@
   }
 
   .hero {
-    background-image: url("../../assets/images/pattern-rings.svg"),
-      url("../../assets/images/pattern-circle.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: -265px 86px, 702px 471px;
-    background-size: 530px, 129px;
+    background-image: url("../../assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    background-position: -265px 86px;
+    background-size: 530px;
   }
 
   .hero--indent {
     padding-left: 30px;
     padding-right: 30px;
 
-    padding-bottom: 72px;
+    padding-bottom: 60px;
   }
 
   .hero_foto-box {
     width: 322px;
-    position: relative;
     margin-left: auto;
     margin-right: -30px;
 
-    margin-bottom: 40px;
+    margin-bottom: 0; ///////////////////////////////
+  }
+
+  .hero_circle {
+    display: block;
+    position: absolute;
+    left: 702px;
+    top: 470px;
+    width: 129px;
+  }
+
+  .hero_contactBox--indent {
+    display: flex;
+    justify-content: space-between;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+  }
+
+  .hero_text {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+
+    margin-bottom: 0; /////////////////////////////////////////////
+  }
+
+  .hero_icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero_infoBox {
+    position: absolute;
+    width: 443px;
+    top: 151px;
+  }
+
+  .hero_header {
+    font-family: $mainFont;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 700;
+    letter-spacing: -2.05px;
+    margin: 0;
+    margin-bottom: 11px;
+    color: $text-color;
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .hero_header-name::after {
+    height: 6px;
+  }
+
+  .hero_main-text {
+    font-size: 18px;
+    line-height: 28px;
+
+    text-align: left;
+    margin-bottom: 34px;
+  }
+
+  .hero_contact-box {
+    text-align: left;
   }
 }

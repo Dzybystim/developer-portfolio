@@ -20,49 +20,87 @@
   <body class="fon-color">
     <header>
       <div class="hero hero--indent">
-        <div class="hero_foto-box">
-          <p class="hero_text hero_text--indent">adamkeyes</p>
-          <ul class="hero_list hero_list--indent">
+        <div class="hero_contactBox--indent">
+          <p class="hero_text">adamkeyes</p>
+          <ul class="hero_list">
             <li>
-              <svg class="hero_icon">
-                <use href="./assets/images/sprite-icon.svg#icon-github"></use>
-              </svg>
+              <a href="https://github.com/Dzybystim" target="_blank">
+                <svg class="hero_icon">
+                  <use href="./assets/images/sprite-icon.svg#icon-github"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg class="hero_icon">
-                <use
-                  href="./assets/images/sprite-icon.svg#icon-frontend-mentor"
-                ></use>
-              </svg>
+              <a
+                href="https://www.frontendmentor.io/profile/Dzybystim"
+                target="_blank"
+              >
+                <svg class="hero_icon">
+                  <use
+                    href="./assets/images/sprite-icon.svg#icon-frontend-mentor"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg class="hero_icon">
-                <use href="./assets/images/sprite-icon.svg#icon-linkedin"></use>
-              </svg>
+              <a
+                href="https://www.linkedin.com/in/dima-shapowal/"
+                target="_blank"
+              >
+                <svg class="hero_icon">
+                  <use
+                    href="./assets/images/sprite-icon.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg class="hero_icon">
-                <use href="./assets/images/sprite-icon.svg#icon-twitter"></use>
-              </svg>
+              <a href="#" target="_blank">
+                <svg class="hero_icon">
+                  <use
+                    href="./assets/images/sprite-icon.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
-
+        </div>
+        <div class="hero_foto-box">
+          <picture>
+            <source
+              srcset="./assets/images/image-profile-tablet.webp"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./assets/images/image-profile-desktop.webp"
+              media="(min-width: 1440px)"
+            />
+            <img
+              class="hero_image"
+              alt="avatar developer"
+              src="./assets/images/image-profile-mobile.webp"
+            />
+          </picture>
+        </div>
+        <div class="hero_circle">
           <img
+            src="./assets/images/pattern-circle.svg"
+            alt="circle"
             class="hero_image"
-            alt="avatar developer"
-            src="./assets/images/image-profile-mobile.webp"
           />
         </div>
-        <h1 class="hero_header">
-          Nice to meet you! I'm
-          <span class="hero_header-name">Adam Keyes</span>.
-        </h1>
-        <p class="hero_main-text">
-          Based in the UK, I'm a front-end developer passionate about building
-          accessible web apps that users love.
-        </p>
-        <div class="hero_contact-box">
-          <a class="link_text">Contact me</a>
+        <div class="hero_infoBox">
+          <h1 class="hero_header">
+            Nice to meet you! I'm
+            <span class="hero_header-name">Adam Keyes</span>.
+          </h1>
+          <p class="hero_main-text">
+            Based in the UK, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
+          <div class="hero_contact-box">
+            <a class="link_text">Contact me</a>
+          </div>
         </div>
       </div>
     </header>
