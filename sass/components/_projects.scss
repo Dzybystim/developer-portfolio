@@ -20,3 +20,37 @@
 
   margin: 0;
 }
+
+.projects_box {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .projects--indent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .projects_headerBox {
+    align-items: center;
+
+    margin-bottom: 60px;
+  }
+
+  .projects_header {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.05px;
+  }
+
+  .projects_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+
+    margin-bottom: 100px;
+  }
+}

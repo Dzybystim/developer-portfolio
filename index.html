@@ -86,7 +86,7 @@
           <img
             src="./assets/images/pattern-circle.svg"
             alt="circle"
-            class="hero_image"
+            class="hero_imageCircle"
           />
         </div>
         <div class="hero_infoBox">
@@ -133,127 +133,139 @@
             <p class="experience_text">3 Years Experience</p>
           </li>
         </ul>
-        <div class="experience_line"></div>
+        <div class="experience_line experience_hidden"></div>
       </section>
       <section class="projects projects--indent">
         <div class="projects_headerBox">
           <h2 class="projects_header">Projects</h2>
           <a class="link_text">Contact me</a>
         </div>
-        <div class="projects_box">
-          <article class="job">
-            <div class="job_imgBox">
-              <img
-                class="job_img"
-                alt="design portfolio"
-                src="/assets/images/thumbnail-project-1-small.webp"
-              />
-            </div>
-            <h3 class="job_header">Design portfolio</h3>
-            <ul class="job_language">
-              <li class="job_languageElem">HTML</li>
-              <li class="job_languageElem">CSS</li>
-            </ul>
-            <div class="job_link">
-              <a class="link_text job--block">View project</a>
-              <a class="link_text job--block">View code</a>
-            </div>
-          </article>
-          <article class="job">
-            <div class="job_imgBox">
-              <img
-                class="job_img"
-                alt="e-learning landing page"
-                src="/assets/images/thumbnail-project-2-small.webp"
-              />
-            </div>
-            <h3 class="job_header">E-learning landing page</h3>
-            <ul class="job_language">
-              <li class="job_languageElem">HTML</li>
-              <li class="job_languageElem">CSS</li>
-            </ul>
-            <div class="job_link">
-              <a class="link_text job--block">View project</a>
-              <a class="link_text job--block">View code</a>
-            </div>
-          </article>
-          <article class="job">
-            <div class="job_imgBox">
-              <img
-                class="job_img"
-                alt="todo web app"
-                src="/assets/images/thumbnail-project-3-small.webp"
-              />
-            </div>
-            <h3 class="job_header">Todo web app</h3>
-            <ul class="job_language">
-              <li class="job_languageElem">HTML</li>
-              <li class="job_languageElem">CSS</li>
-              <li class="job_languageElem">JavaScript</li>
-            </ul>
-            <div class="job_link">
-              <a class="link_text job--block">View project</a>
-              <a class="link_text job--block">View code</a>
-            </div>
-          </article>
-          <article class="job">
-            <div class="job_imgBox">
-              <img
-                class="job_img"
-                alt="entertainment web app"
-                src="/assets/images/thumbnail-project-4-small.webp"
-              />
-            </div>
-            <h3 class="job_header">Entertainment web app</h3>
-            <ul class="job_language">
-              <li class="job_languageElem">HTML</li>
-              <li class="job_languageElem">CSS</li>
-              <li class="job_languageElem">JavaScript</li>
-            </ul>
-            <div class="job_link">
-              <a class="link_text job--block">View project</a>
-              <a class="link_text job--block">View code</a>
-            </div>
-          </article>
-          <article class="job">
-            <div class="job_imgBox">
-              <img
-                class="job_img"
-                alt="memory game"
-                src="/assets/images/thumbnail-project-5-small.webp"
-              />
-            </div>
-            <h3 class="job_header">Memory Game</h3>
-            <ul class="job_language">
-              <li class="job_languageElem">HTML</li>
-              <li class="job_languageElem">CSS</li>
-              <li class="job_languageElem">JavaScript</li>
-            </ul>
-            <div class="job_link">
-              <a class="link_text job--block">View project</a>
-              <a class="link_text job--block">View code</a>
-            </div>
-          </article>
-          <article class="job">
-            <div class="job_imgBox">
-              <img
-                class="job_img"
-                alt="art gallery showcase"
-                src="/assets/images/thumbnail-project-6-small.webp"
-              />
-            </div>
-            <h3 class="job_header">Art gallery showcase</h3>
-            <ul class="job_language">
-              <li class="job_languageElem">HTML</li>
-              <li class="job_languageElem">CSS</li>
-              <li class="job_languageElem">JavaScript</li>
-            </ul>
-            <div class="job_link">
-              <a class="link_text job--block">View project</a>
-              <a class="link_text job--block">View code</a>
-            </div>
-          </article>
-        </div>
+        <ul class="projects_box">
+          <li class="job_item">
+            <article class="job">
+              <div class="job_imgBox">
+                <img
+                  class="job_img"
+                  alt="design portfolio"
+                  src="/assets/images/thumbnail-project-1-small.webp"
+                />
+              </div>
+              <h3 class="job_header">Design portfolio</h3>
+              <ul class="job_language">
+                <li class="job_languageElem">HTML</li>
+                <li class="job_languageElem">CSS</li>
+              </ul>
+              <div class="job_link">
+                <a class="link_text job--block">View project</a>
+                <a class="link_text job--block">View code</a>
+              </div>
+            </article>
+          </li>
+          <li class="job_item">
+            <article class="job">
+              <div class="job_imgBox">
+                <img
+                  class="job_img"
+                  alt="e-learning landing page"
+                  src="/assets/images/thumbnail-project-2-small.webp"
+                />
+              </div>
+              <h3 class="job_header">E-learning landing page</h3>
+              <ul class="job_language">
+                <li class="job_languageElem">HTML</li>
+                <li class="job_languageElem">CSS</li>
+              </ul>
+              <div class="job_link">
+                <a class="link_text job--block">View project</a>
+                <a class="link_text job--block">View code</a>
+              </div>
+            </article>
+          </li>
+          <li class="job_item">
+            <article class="job">
+              <div class="job_imgBox">
+                <img
+                  class="job_img"
+                  alt="todo web app"
+                  src="/assets/images/thumbnail-project-3-small.webp"
+                />
+              </div>
+              <h3 class="job_header">Todo web app</h3>
+              <ul class="job_language">
+                <li class="job_languageElem">HTML</li>
+                <li class="job_languageElem">CSS</li>
+                <li class="job_languageElem">JavaScript</li>
+              </ul>
+              <div class="job_link">
+                <a class="link_text job--block">View project</a>
+                <a class="link_text job--block">View code</a>
+              </div>
+            </article>
+          </li>
+          <li class="job_item">
+            <article class="job">
+              <div class="job_imgBox">
+                <img
+                  class="job_img"
+                  alt="entertainment web app"
+                  src="/assets/images/thumbnail-project-4-small.webp"
+                />
+              </div>
+              <h3 class="job_header">Entertainment web app</h3>
+              <ul class="job_language">
+                <li class="job_languageElem">HTML</li>
+                <li class="job_languageElem">CSS</li>
+                <li class="job_languageElem">JavaScript</li>
+              </ul>
+              <div class="job_link">
+                <a class="link_text job--block">View project</a>
+                <a class="link_text job--block">View code</a>
+              </div>
+            </article>
+          </li>
+          <li class="job_item">
+            <article class="job">
+              <div class="job_imgBox">
+                <img
+                  class="job_img"
+                  alt="memory game"
+                  src="/assets/images/thumbnail-project-5-small.webp"
+                />
+              </div>
+              <h3 class="job_header">Memory Game</h3>
+              <ul class="job_language">
+                <li class="job_languageElem">HTML</li>
+                <li class="job_languageElem">CSS</li>
+                <li class="job_languageElem">JavaScript</li>
+              </ul>
+              <div class="job_link">
+                <a class="link_text job--block">View project</a>
+                <a class="link_text job--block">View code</a>
+              </div>
+            </article>
+          </li>
+          <li class="job_item">
+            <article class="job">
+              <div class="job_imgBox">
+                <img
+                  class="job_img"
+                  alt="art gallery showcase"
+                  src="/assets/images/thumbnail-project-6-small.webp"
+                />
+              </div>
+              <h3 class="job_header">Art gallery showcase</h3>
+              <ul class="job_language">
+                <li class="job_languageElem">HTML</li>
+                <li class="job_languageElem">CSS</li>
+                <li class="job_languageElem">JavaScript</li>
+              </ul>
+              <div class="job_link">
+                <a class="link_text job--block">View project</a>
+                <a class="link_text job--block">View code</a>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="contact">
@@ -291,7 +303,7 @@
           <textarea
             name="message"
             placeholder="Message"
-            rows="5"
+            rows="4"
             class="contact_input"
             required
           ></textarea>
@@ -306,26 +318,40 @@
         <p class="hero_text hero_text--center">adamkeyes</p>
         <ul class="hero_list hero_list--center">
           <li>
-            <svg class="hero_icon">
-              <use href="./assets/images/sprite-icon.svg#icon-github"></use>
-            </svg>
+            <a href="https://github.com/Dzybystim" target="_blank">
+              <svg class="hero_icon">
+                <use href="./assets/images/sprite-icon.svg#icon-github"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg class="hero_icon">
-              <use
-                href="./assets/images/sprite-icon.svg#icon-frontend-mentor"
-              ></use>
-            </svg>
+            <a
+              href="https://www.frontendmentor.io/profile/Dzybystim"
+              target="_blank"
+            >
+              <svg class="hero_icon">
+                <use
+                  href="./assets/images/sprite-icon.svg#icon-frontend-mentor"
+                ></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg class="hero_icon">
-              <use href="./assets/images/sprite-icon.svg#icon-linkedin"></use>
-            </svg>
+            <a
+              href="https://www.linkedin.com/in/dima-shapowal/"
+              target="_blank"
+            >
+              <svg class="hero_icon">
+                <use href="./assets/images/sprite-icon.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg class="hero_icon">
-              <use href="./assets/images/sprite-icon.svg#icon-twitter"></use>
-            </svg>
+            <a href="#" target="_blank">
+              <svg class="hero_icon">
+                <use href="./assets/images/sprite-icon.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>

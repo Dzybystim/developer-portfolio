@@ -248,7 +248,17 @@
     position: absolute;
     left: 702px;
     top: 470px;
-    width: 129px;
+    width: 65px;
+    height: 129px;
+  }
+  .hero_imageCircle {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+    display: block;
+    height: 100%;
+    width: 100%;
   }
   .hero_contactBox--indent {
     display: flex;
@@ -359,6 +369,50 @@
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .experience {
+    background-image: url("../../assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    background-position: 570px 387px;
+    background-size: 530px;
+  }
+  .experience_line--indent {
+    margin-bottom: 52px;
+  }
+  .experience--indent {
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .experience_hidden {
+    display: none;
+  }
+  .experience_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 52px;
+  }
+  .experience_list-item {
+    flex-basis: calc((100% - 7px) / 2);
+    margin: 0;
+  }
+  .experience_list-item:last-child {
+    margin-bottom: 0;
+  }
+  .experience_header {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    text-align: left;
+    margin-bottom: 14px;
+  }
+  .experience_text {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+}
 .projects--indent {
   padding-left: 16px;
   padding-right: 16px;
@@ -380,11 +434,39 @@
   margin: 0;
 }
 
-.job {
+.projects_box {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .projects--indent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .projects_headerBox {
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .projects_header {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.05px;
+  }
+  .projects_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+    margin-bottom: 100px;
+  }
+}
+.job_item {
   margin-bottom: 40px;
 }
 
-.job:last-child {
+.job_item:last-child {
   margin-bottom: 80px;
 }
 
@@ -426,6 +508,15 @@
   padding-bottom: 12px;
 }
 
+@media screen and (min-width: 768px) {
+  .job_item {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .job_item:last-child {
+    margin-bottom: 0;
+  }
+}
 .contact {
   background-color: #242424;
   padding-left: 16px;
@@ -513,7 +604,7 @@
 }
 
 .contact_input--bottom {
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 }
 
 .contact_input::-moz-placeholder {
@@ -543,4 +634,40 @@
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    background-color: #242424;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    background-position: -368px 547px;
+  }
+  .contact_form--indent {
+    margin-bottom: 92px;
+    margin-left: 132px;
+    margin-right: 132px;
+  }
+  .contact_header {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.05px;
+    margin-bottom: 20px;
+  }
+  .contact_text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 48px;
+  }
+  .contact_socialBox--indent {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact_socialBox {
+    display: flex;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=main.css.map */

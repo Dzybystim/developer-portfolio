@@ -64,3 +64,59 @@
   margin: 0;
   text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+  .experience {
+    background-image: url("../../assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    background-position: 570px 387px;
+    background-size: 530px;
+  }
+
+  .experience_line--indent {
+    margin-bottom: 52px;
+  }
+
+  .experience--indent {
+    padding-bottom: 100px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .experience_hidden {
+    display: none;
+  }
+
+  .experience_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 52px;
+  }
+
+  .experience_list-item {
+    flex-basis: calc((100% - 7px) / 2);
+    margin: 0; ////////////////////////////////////////////////////////////
+  }
+
+  .experience_list-item:last-child {
+    margin-bottom: 0; ///////////////////////////////////////////////////
+  }
+
+  .experience_header {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+
+    text-align: left;
+    margin-bottom: 14px;
+  }
+
+  .experience_text {
+    font-size: 18px;
+    line-height: 28px;
+
+    text-align: left;
+  }
+}

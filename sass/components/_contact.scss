@@ -91,7 +91,7 @@
 }
 
 .contact_input--bottom {
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 }
 
 .contact_input::placeholder {
@@ -111,4 +111,49 @@
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    background-color: $second-fon-color;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+
+    background-position: -368px 547px;
+  }
+
+  .contact_form--indent {
+    margin-bottom: 92px;
+
+    margin-left: 132px;
+    margin-right: 132px;
+  }
+
+  .contact_header {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.05px;
+
+    margin-bottom: 20px;
+  }
+
+  .contact_text {
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-bottom: 48px;
+  }
+
+  .contact_socialBox--indent {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact_socialBox {
+    display: flex;
+    justify-content: space-between;
+  }
 }

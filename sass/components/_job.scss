@@ -1,8 +1,8 @@
-.job {
+.job_item {
   margin-bottom: 40px;
 }
 
-.job:last-child {
+.job_item:last-child {
   margin-bottom: 80px;
 }
 
@@ -48,4 +48,16 @@
   gap: 30px;
 
   padding-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .job_item {
+    margin-bottom: 0; ///////////////////////////////////////////////////////
+
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .job_item:last-child {
+    margin-bottom: 0; ////////////////////////////////////////////////////
+  }
 }

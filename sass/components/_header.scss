@@ -157,7 +157,17 @@
     position: absolute;
     left: 702px;
     top: 470px;
-    width: 129px;
+    width: 65px;
+    height: 129px;
+  }
+
+  .hero_imageCircle {
+    object-fit: cover;
+    object-position: left;
+
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 
   .hero_contactBox--indent {
