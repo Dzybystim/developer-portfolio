@@ -307,6 +307,27 @@
     text-align: left;
   }
 }
+@media screen and (min-width: 1440px) {
+  .fon-color {
+    max-width: 1440px;
+  }
+  .hero {
+    background-image: url("../../assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    background-position: -100px 133px;
+    background-size: 530px;
+  }
+  .hero--indent {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-bottom: 104px;
+  }
+  .hero_foto-box {
+    width: 445px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
 .experience {
   background-image: url("../../assets/images/pattern-rings.svg");
   background-repeat: no-repeat;
