@@ -54,3 +54,27 @@
     margin-bottom: 100px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .projects--indent {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
+  .projects_headerBox {
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .projects_header {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+  }
+
+  .projects_box {
+    row-gap: 69px;
+
+    margin-bottom: 139px;
+  }
+}

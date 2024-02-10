@@ -61,3 +61,39 @@
     margin-bottom: 0; ////////////////////////////////////////////////////
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .job_item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  .job_imgBox {
+    position: relative;
+    width: 540px;
+  }
+
+  .job--block {
+    display: none;
+  }
+
+  .job_link--desktop {
+    opacity: 0;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $fon-color-job;
+
+    padding-bottom: 0; //////////////////////////////////////////
+  }
+
+  .job_imgBox:hover > .job_link--desktop {
+    opacity: 1;
+  }
+}
