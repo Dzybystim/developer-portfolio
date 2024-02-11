@@ -99,7 +99,7 @@
             accessible web apps that users love.
           </p>
           <div class="hero_contact-box">
-            <a class="link_text">Contact me</a>
+            <a class="link_text" href="#contact_section">Contact me</a>
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@
       <section class="projects projects--indent">
         <div class="projects_headerBox">
           <h2 class="projects_header">Projects</h2>
-          <a class="link_text">Contact me</a>
+          <a class="link_text" href="#contact_section">Contact me</a>
         </div>
         <ul class="projects_box">
           <li class="job_item">
@@ -329,48 +329,68 @@
       </section>
     </main>
     <footer class="contact">
-      <section>
+      <section id="contact_section">
         <form class="contact_form--indent">
-          <h2 class="contact_header">Contact</h2>
-          <p class="contact_text">
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and I’ll get back to you as soon as possible.
-          </p>
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            class="contact_input contact_input--bottom"
-            required
-            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}"
-            title="Нужно ввести больше 2 символов"
-          />
-          <label name="name" class="contact_textInvalid"
-            >Sorry, invalid format here</label
-          >
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            class="contact_input contact_input--bottom"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            title="Нужно ввести больше 2 символов"
-          />
-          <label name="email" class="contact_textInvalid"
-            >Sorry, invalid format here</label
-          >
-          <textarea
-            name="message"
-            placeholder="Message"
-            rows="4"
-            class="contact_input"
-            required
-          ></textarea>
-          <label name="message" class="contact_textInvalid"
-            >Sorry, invalid format here</label
-          >
-          <button type="submit" class="button">Send message</button>
+          <div class="contact_flex--width">
+            <h2 class="contact_header">Contact</h2>
+            <p class="contact_text">
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </p>
+          </div>
+          <div class="contact_flex--width">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="contact_input contact_input--bottom"
+              required
+              pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}"
+              title="Нужно ввести больше 2 символов"
+            />
+            <label name="name" class="contact_textInvalid"
+              >Sorry, invalid format here
+              <svg class="hero_icon hero_icon--red">
+                <use
+                  href="./assets/images/sprite-icon.svg#icon-notification"
+                ></use>
+              </svg>
+            </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="contact_input contact_input--bottom"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              title="Нужно ввести електронный адрес @"
+            />
+            <label name="email" class="contact_textInvalid"
+              >Sorry, invalid format here
+              <svg class="hero_icon hero_icon--red">
+                <use
+                  href="./assets/images/sprite-icon.svg#icon-notification"
+                ></use>
+              </svg>
+            </label>
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="4"
+              class="contact_input"
+              required
+            ></textarea>
+            <label name="message" class="contact_textInvalid"
+              >Sorry, invalid format here
+              <svg class="hero_icon hero_icon--red">
+                <use
+                  href="./assets/images/sprite-icon.svg#icon-notification"
+                ></use>
+              </svg>
+            </label>
+            <button type="submit" class="button">Send message</button>
+          </div>
         </form>
         <div class="experience_line"></div>
       </section>

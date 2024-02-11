@@ -26,6 +26,7 @@
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
+  text-decoration: none;
   color: #ffffff;
 }
 
@@ -88,6 +89,7 @@
   letter-spacing: -0.17px;
   color: #ff6f5b;
   text-align: right;
+  position: relative;
 }
 
 .contact_input[name=email]:not(:placeholder-shown):required:invalid ~ .contact_textInvalid[name=email], .contact_input[name=name]:not(:placeholder-shown):required:invalid ~ .contact_textInvalid[name=name] {
@@ -99,6 +101,7 @@
   letter-spacing: -0.17px;
   color: #ff6f5b;
   text-align: right;
+  position: relative;
 }
 
 .fon-color {
@@ -172,6 +175,18 @@
 
 .hero_icon:hover {
   fill: #4ee1a0;
+}
+
+.hero_icon--red {
+  fill: #ff6f5b;
+  cursor: default;
+  position: absolute;
+  top: -60px;
+  right: 0;
+}
+
+.hero_icon--red:hover {
+  fill: #ff6f5b;
 }
 
 .hero_image {
@@ -356,6 +371,16 @@
   .hero_main-text {
     width: 445px;
     margin-bottom: 66px;
+  }
+  .hero_icon--red {
+    fill: #ff6f5b;
+    cursor: default;
+    position: absolute;
+    top: -60px;
+    right: 0;
+  }
+  .hero_icon--red:hover {
+    fill: #ff6f5b;
   }
 }
 .experience {
@@ -634,7 +659,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3137254902);
+    background: rgba(0, 0, 0, 0.8666666667);
     padding-bottom: 0;
   }
   .job_imgBox:hover > .job_link--desktop {
@@ -718,12 +743,12 @@
 }
 
 .contact_input:not(:-moz-placeholder-shown):required:invalid {
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   border-bottom: 1px solid #ff6f5b;
 }
 
 .contact_input:not(:placeholder-shown):required:invalid {
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   border-bottom: 1px solid #ff6f5b;
 }
 
@@ -793,5 +818,34 @@
   .contact_socialBox {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 84px;
+    background-position: -205px 327px;
+  }
+  .contact_form--indent {
+    display: flex;
+    gap: 220px;
+    margin-bottom: 92px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact_header {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    margin-bottom: 36px;
+    text-align: left;
+  }
+  .contact_text {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .contact_flex--width {
+    width: 445px;
   }
 }/*# sourceMappingURL=main.css.map */

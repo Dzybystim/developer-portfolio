@@ -76,7 +76,7 @@
 }
 
 .contact_input:not(:placeholder-shown):required:invalid {
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   border-bottom: 1px solid $warning-color;
 }
 
@@ -155,5 +155,44 @@
   .contact_socialBox {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 84px;
+
+    background-position: -205px 327px;
+  }
+
+  .contact_form--indent {
+    display: flex;
+    gap: 220px;
+
+    margin-bottom: 92px;
+
+    margin-left: 0; ////////////////////////////////////////////////
+    margin-right: 0; //////////////////////////////////////////
+  }
+
+  .contact_header {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+
+    margin-bottom: 36px;
+    text-align: left;
+  }
+
+  .contact_text {
+    text-align: left;
+
+    margin-bottom: 0; ///////////////////////////////////////////////////////
+  }
+
+  .contact_flex--width {
+    width: 445px;
   }
 }

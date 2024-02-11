@@ -75,6 +75,19 @@
   fill: $brand-color;
 }
 
+.hero_icon--red {
+  fill: $warning-color;
+  cursor: default;
+
+  position: absolute;
+  top: -60px;
+  right: 0;
+}
+
+.hero_icon--red:hover {
+  fill: $warning-color;
+}
+
 .hero_image {
   display: block;
   height: 100%;
@@ -285,5 +298,18 @@
   .hero_main-text {
     width: 445px;
     margin-bottom: 66px;
+  }
+
+  .hero_icon--red {
+    fill: $warning-color;
+    cursor: default;
+
+    position: absolute;
+    top: -60px;
+    right: 0;
+  }
+
+  .hero_icon--red:hover {
+    fill: $warning-color;
   }
 }
